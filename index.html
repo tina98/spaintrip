@@ -1,19 +1,18 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
- <link href="css/main.css" rel="stylesheet">
-</head>
 <body>
 
-<h1>My Web Page</h1>
-<script src="js/myScript.js"></script>
+<h1>My First Web Page</h1>
 
 <p id="demo">A Paragraph.</p>
 
 <button type="button" onclick="myFunction()">Try it</button>
 
-<p><strong>Note:</strong> myFunction is stored in an external file called "myScript.js".</p>
-
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
 
 </body>
-</html>
+</html> 
