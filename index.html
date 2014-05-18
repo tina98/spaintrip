@@ -1,18 +1,45 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<h1>My First Web Page</h1>
-
-<p id="demo">A Paragraph.</p>
-
-<button type="button" onclick="myFunction()">Try it</button>
-
-<script>
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Paragraph changed.";
-}
-</script>
-
-</body>
-</html> 
+    <head>
+        <Title>Trip to Spain!</Title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+        <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css" rel="stylesheet">
+        <link href='css/main.css' rel='spreadsheet'>
+    </head>
+    <body>
+        <script src="js/myScript.js"></script>
+            
+        <!--navigation bar-->
+        <div class="nav">
+            <div class="container">
+                <ul class="pull-left">
+                    <li><a href="###">Home</a></li>
+                    <li><a href="###">Instructions</a></li>
+                    <li><a href="###">Shoutouts</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!--instructions-->
+        <div class="instructions">
+            <div id="beginning">
+                <h1>This is how you play the game</h1>
+                <p>lorem ipsum</p>
+            </div>
+        </div>
+        
+        <!--question number-->
+        <div class="questions">
+            <p>Question #<span id="question#">--</span>/15</p>
+        </div>
+        
+        <div class="question1">
+            <p><span="demo">Hello mfs</span></p>
+            <p>First pick</p><input type="text" name="firstpick" placeholder="q or p" onkeyup="myScript.js">
+        </div>
+        
+    </body>
+</html>
