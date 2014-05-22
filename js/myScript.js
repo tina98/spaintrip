@@ -13,3 +13,7 @@ function HideInstructions(){
     $('div#instructions').hide();
     document.getElementById("instructions").hide;
 }
+
+function Work(){
+    
+}
