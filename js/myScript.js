@@ -7,4 +7,5 @@ function myFunction() {
 function UpScore(){
     document.getElementById("team1score").innerHTML=score;
     score++;
+    document.getElementById("demO").delete;
 }
