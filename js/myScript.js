@@ -5,6 +5,6 @@ function myFunction() {
 }
 
 function UpScore(){
-    document.getElementById("score").innerHTML=score;
+    document.getElementById("team1score").innerHTML=score;
     score++;
 }
