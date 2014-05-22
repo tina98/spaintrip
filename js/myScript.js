@@ -7,5 +7,8 @@ function myFunction() {
 function UpScore(){
     document.getElementById("team1score").innerHTML=score;
     score++;
-    document.getElementById("demo").delete;
+}
+
+function HideInstructions(){
+    document.getElementbyId("kdoneINstructions").hide;
 }
