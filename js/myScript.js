@@ -6,9 +6,7 @@ function myFunction() {
 
 function UpScore(){
     document.getElementById("team1score").innerHTML=score;
-    score++;
-    score++;
-}
+    score+2;
 
 function HideInstructions(){
     $('div#instructions').hide();
