@@ -10,7 +10,6 @@ function UpScore(){
 }
 
 function HideInstructions(){
-    $('div#instructions').hide();
     document.getElementById("instructions").hide;
 }
 
