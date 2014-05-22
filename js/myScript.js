@@ -9,6 +9,10 @@ function UpScore(){
     score++;
 }
 
+  $("#kdoneInstructions").click(function(){
+    $("#beginning").hide();
+  });
+
 
 function HideInstructions(){
     document.getElementById("beginning").hide;
