@@ -10,5 +10,5 @@ function UpScore(){
 }
 
 function HideInstructions(){
-    document.getElementbyId("kdoneINstructions").hide;
+    $('div#instructions').hide();
 }
