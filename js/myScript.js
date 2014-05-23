@@ -9,13 +9,13 @@ function UpScore(){
     score++;
 }
 
-  $("#kdoneInstructions").click(function(){
-    $("#beginning").hide();
-  });
+//   $("#kdoneInstructions").click(function(){
+//     $("#beginning").hide();
+//   });
 
 
 function HideInstructions(){
-    document.getElementById("beginning").hide;
+    $("#beginnning").fadeOut();
 }
 
 function Work(){
