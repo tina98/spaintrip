@@ -1,4 +1,6 @@
 var score=1;
+var qnum=1;
+var currentquestion;
 
 function myFunction() {
     document.getElementById("demo").innerHTML = "Paragraph changed.";
@@ -13,11 +15,30 @@ function UpScore(){
 //     $("#beginning").hide();
 //   });
 
+function ShowQuestion(){
+    document.getElementbyId("#question#").innerHTML=qnum;
+}
+
+function UpQuestion(){
+    qnum++;
+    currentquestion[qnum];
+    ShowQuestion();
+}
+
 
 function HideInstructions(){
     $("#beginnning").fadeOut();
 }
 
-function Work(){
-    
+function CrossOut(var wrong){
+    document.getElementById().style.text-decoration="line-through";
 }
+
+function InitalizeQuestion(){
+    document.getElementById("#mc1").innerHTML=
+}
+
+currentquestion[1]=001;
+currentquestion[2]=002;
+
+var 001=[]
