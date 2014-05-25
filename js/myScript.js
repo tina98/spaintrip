@@ -1,6 +1,6 @@
-var score=1;
-var qnum=1;
-var currentquestion;
+// var score=1;
+// var qnum=1;
+// var currentquestion;
 
 function myFunction() {
     document.getElementById("demo").innerHTML = "Paragraph changed.";
