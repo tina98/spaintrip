@@ -30,15 +30,15 @@ function HideInstructions(){
     $("#beginnning").fadeOut();
 }
 
-function CrossOut(var wrong){
-    document.getElementById().style.text-decoration="line-through";
-}
+// function CrossOut(var wrong){
+//     document.getElementById().style.text-decoration="line-through";
+// }
 
 function InitalizeQuestion(){
-    document.getElementById("#mc1").innerHTML=
+    document.getElementById("#mc1").innerHTML="sdfsdf";
 }
 
 currentquestion[1]=001;
 currentquestion[2]=002;
 
-var 001=[]
+var 001=[];
