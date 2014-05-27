@@ -1,62 +1,83 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <Title>Trip to Spain!</Title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
-        <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css" rel="stylesheet">
-        <link href='css/main.css' rel='spreadsheet'>
+	<head>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+
+    <title>Trip to Spain!</title>
     </head>
     <body>
         <script src="js/myScript.js"></script>
         
+        <a href="https://github.com/tina98"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:1;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+            
         <!--navigation bar-->
         <div class="nav">
             <div class="container">
                 <ul class="pull-left">
-                    <li><a href="###">Home</a></li>
-                    <li><a href="###">Instructions</a></li>
-                    <li><a href="###">Shoutouts</a></li>
+                    <li><span id="homekey" onClick="homee()">Home</span></li>
+                    <li><span id="todokey" onClick="instrucs()">Instructions</span></li>
+                    <li><span id="shoutoutkey" onClick="shoutout()">Shoutouts</span></li>
                 </ul>
             </div>
         </div>
         
+        
+        
         <!--instructions-->
         <div class="instructions">
             <div id="beginning">
-                <h1>This is how you play the game.</h1>
-                <p>lorem ipsum</p>
-                <input type="button" id="kdoneInstructions" value="Okay!" onclick="HideInstructions()">
-            </div>
+                <h1>Trip to Spain</h1>
+                <p>The goal of this online programmed game is to continue to explore Spain until you get tired and need to end your trip at a hotel. The game begins in Michigan, with your team finding out you won a free trip to Spain. To progress through the game, one representative from your team answers the questions. There's various types of questions, including multiple choice, sentence completition, verb conjugation, etc. relating to many different Spanish topics you have learned in Spanish 2. The team that has the most questions answered correctly at the end of the game wins. </p>
+                <h1>Instructions</h1>
+               <p> When the game begins, one representative from each team goes up to the keyboard. To decide who answers first, <strong>Team 1 must click "Q" on the keyboard, and Team 2 must click "P" on the keyboard</strong> when the question shows up. Whichever team clicks their button first will get to answer first, either picking a multiple choice option, or typing in the correct answer. If the team gets it wrong, then the other team gets a try. The teams keep switching turns until one team gets it correctly, getting a point for the team. In case no team gets the right answer, 5 seconds after the question initially shows up, the teams have an option to skip the question for no points. The game ends after 25 questions, and whichever team has the most points in the end wins.
+                </p> <div id="buttons"><center>
+                <input type="button" id="exampleQ" value="Try it out!" onclick="ShowExample()">
+                <input type="button" id="kdoneInstructions" value="Okay!" onclick="HideInstructions()"></center>
+            </div></div>
         </div>
         
         <!--question number-->
+        <div id="actualgame">
+        <div id="qq">
         <div class="questions">
-            <p>Question #<span id="question#">--</span>/15</p>
+           <center> <p>Question #<span id="question#">--</span>/25</p></center>
         </div>
         
         <div class="question1">
-            <p><span id="question">lorem ipsum how do you spanish</span><span id="demo">change this shitahh</span></p>
-            <p span id="firstpick"><input type="text" name="firstanswer" placeholder="q or p" autofocus onkeyup="myFunction()"/></p>
-            <p span id="bl"><input type="text" name="answer" placeholder="type in your answer here"/></span></p>
-            <p span id="mc"><input type="button" id="a1" value="a"><span id="mc1">--</span><br>
-                            <input type="button" id="a2" value="b"><span id="mc2">--</span><br>
-                            <input type="button" id="a3" value="c"><span id="mc3">--</span><br>
-                            <input type="button" id="a4" value="d"><span id="mc4">--</span><br>
+            <p><span id="question">Much Spanish. Wow.</span><span id="demo"></span>            
+            <span id="firstpick"><input type="text" id="firstanswer" placeholder="q or p" onkeyup="myFunction()"/></span></p>
+
+            <p span id="bl"><input type="text" id="answer" placeholder="type in your answer here" size="35" /></span><input type="button" id="checkthis" value="submit" onClick="check()">
+            	<br><input type="button" id="accentA" value="á" onClick="addAccent('á')"><input type="button" id="accentE" value="é" onClick="addAccent('é')"><input type="button" id="accentI" value="í" onClick="addAccent('í')"><input type="button" id="accentO" value="ó" onClick="addAccent('ó')"><input type="button" id="accentU" value="ú" onClick="addAccent('ú')"><input type="button" id="accentN" value="ñ" onClick="addAccent('ñ')"><input type="button" id="exclamation" value="¡" onClick="addAccent('¡')"><input type="button" id="question" value="¿" onClick="addAccent('¿')">
+           	
+            </p>
+            <p span id="mc"><input type="button" id="a1" value="a" onClick="checkA()"><span id="mc1">--</span><br>
+                            <input type="button" id="a2" value="b" onClick="checkB()"><span id="mc2">--</span><br>
+                            <input type="button" id="a3" value="c" onClick="checkC()"><span id="mc3">--</span><br>
+                            <input type="button" id="a4" value="d" onClick="checkD()"><span id="mc4" >--</span><br>
+                            
             </scan>
+            
         </div>
-        
+	<br><input type="button" id="skipthis" value="Skip this question" onClick="skip()">
+            </div>     
         <div id="team1">
-            <span id="team1score">--</span>
+            <p>Team 1: </p><span id="t1S">0</span>
         </div>
-        <div id="teams2">
-            <span id="team2score">--</span>
+        <div id="team2">
+            <p>Team 2: </p><span id="t2S">0</span>
         </div>
-        <input type="button" id="score" value="up score" onclick="UpScore()">
-        
-       
-        
+        <!--<input type="button" id="score" value="up score" onclick="UpScore()">-->
+        </div>
+
+        <div id="WINNING">
+        	<center><span id="actualwinner"></span> Congratulations!!</center>
+        </div>
     </body>
 </html>
