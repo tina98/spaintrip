@@ -107,3 +107,8 @@ h1{
 	display: none;
 	padding-top: 300px ;
 }
+#intro {
+	font-size: 25px;
+	padding:100px 50px;
+	display: none;
+}
