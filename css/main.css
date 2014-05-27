@@ -1,3 +1,109 @@
+.nav {
+	color: #1B4775;
+	font-size: 30px;
+	font-family: 'Poiret One', cursive;
+	width:100%;
+	background-color: #9999FF;
+	opacity: .8;
+	position: fixed;
+}
+.nav:hover{
+	opacity:1;
+}
+#beginning{
+	padding-top: 100px;
+	
+}
+#beginning p{
+	font-size:15px;
+	padding: 10px;
+}
+body {
+	font-family: 'Muli', sans-serif;
+	font-size: 20px;
+}
+.nav li {
+	display: inline;
+	padding: 0px 55px 0px;
+}
+
+#firstpick {
+	opacity: 0;
+	size:1px;
+}
+
+#actualgame {
+	display: none;
+}
+
+
+#skipthis {
+	display:none;
+}
+#homekey{
+	padding: 0px 55px 0px;
+}
+#todokey{
+	padding: 0px 55px 0px;
+}
+#shoutoutkey{
+	padding: 0px 55px 0px;
+}
+
+#homekey:hover{
+	text-decoration:underline;
+	font-weight: bold;
+	/*font-size: 22px;*/
+}
+#todokey:hover{
+	text-decoration:underline;
+	font-weight: bold;
+	/*font-size: 22px;*/
+}
+#shoutoutkey:hover{
+	text-decoration:underline;
+	font-weight: bold;
+	/*font-size: 22px;*/
+}
+
 h1{
-  color:#00ff33;
+	font-family: 'Lobster', cursive;
+}
+
+.instructions{
+	padding: 25px 50px;
+}
+/*#buttons{*/
+/*	padding: 20px 350px;*/
+/*}*/
+
+#team1{
+	/*font-family: 'Patua One', cursive;*/
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	position: fixed;
+	top: 80px;
+	left:50px;
+	font-size:20px;
+}
+
+#team2{
+	/*font-family: 'Patua One', cursive;*/
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	position: fixed;
+	top:80px;
+	right: 50px;
+	font-size:20px;
+}
+#qq{
+	padding:100px 50px;
+	
+}
+.questions{
+	font-family: 'Lobster', cursive;
+}
+#WINNING{
+	font-family: 'Lobster', cursive;
+	font-size: 100px;
+	display: none;
+	padding-top: 300px ;
 }
