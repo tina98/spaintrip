@@ -37,13 +37,19 @@
                 <h1>Instructions</h1>
                <p> When the game begins, one representative from each team goes up to the keyboard. To decide who answers first, <strong>Team 1 must click "Q" on the keyboard, and Team 2 must click "P" on the keyboard</strong> when the question shows up. Whichever team clicks their button first will get to answer first, either picking a multiple choice option, or typing in the correct answer. If the team gets it wrong, then the other team gets a try. The teams keep switching turns until one team gets it correctly, getting a point for the team. In case no team gets the right answer, 5 seconds after the question initially shows up, the teams have an option to skip the question for no points. The game ends after 25 questions, and whichever team has the most points in the end wins.
                 </p> <div id="buttons"><center>
-                <input type="button" id="exampleQ" value="Try it out!" onclick="ShowExample()">
-                <input type="button" id="kdoneInstructions" value="Okay!" onclick="HideInstructions()"></center>
+                <input type="button" id="exampleQ" value="Try it out!" onClick="ShowExample()">
+                <input type="button" id="kdoneInstructions" value="Okay!" onClick="HideInstructions()"></center>
             </div></div>
         </div>
         
+                <div id="intro">
+        	<p> Un día, tu pasas tiempo con los amigos.  El teléfono suena.  La persona en el teléfono habla con tú acerca de un viaje de libre a España.  Tú vas a España con otros estudiantes.</p>
+        	<center><input type="button" value="Begin" onClick="goToQ1()"></center>
+        	</div>
+        
         <!--question number-->
         <div id="actualgame">
+
         <div id="qq">
         <div class="questions">
            <center> <p>Question #<span id="question#">--</span>/25</p></center>
