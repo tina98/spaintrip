@@ -68,6 +68,7 @@ function goAwayPinata(){
 	document.getElementById("team1point").style.display="none";
 	document.getElementById("team2point").style.display="none";
 	document.getElementById("actualgame").style.display="inline";
+	document.getElementById("firstanswer").focus();
 }
 
 function Reset(){
