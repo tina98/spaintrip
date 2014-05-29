@@ -43,11 +43,13 @@ function UpScore(){
 		score2++;
 		document.getElementById("t2S").innerHTML=score2;
 		document.getElementById("team2").style.color="#00FF00";
+		document.getElementById("team2point").style.display="inline";
 	}
 	if (teamnow===t1){
 		score1++;
 		document.getElementById("t1S").innerHTML=score1;
 		document.getElementById("team1").style.color="#00FF00";
+		document.getElementById("team1point").style.display="inline;"
 	}
 	qnum++;
 	if (qnum===26){
@@ -55,9 +57,14 @@ function UpScore(){
 	} 
 	setTimeout(function(){Reset()},1450);
 	setTimeout(function(){go()},1500);
+	setTimeout(function(){goAwayPinata()},1600);
 	
 	
 	
+}
+function goAwayPinata(){
+	document.getElementById("team1point").style.display="none";
+	document.getElementById("team2point").style.display="none";
 }
 
 function Reset(){
