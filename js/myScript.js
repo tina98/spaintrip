@@ -44,12 +44,14 @@ function UpScore(){
 		document.getElementById("t2S").innerHTML=score2;
 		document.getElementById("team2").style.color="#00FF00";
 		document.getElementById("team2point").style.display="inline";
+		document.getElementById("actualgame").style.display="none";
 	}
 	if (teamnow===t1){
 		score1++;
 		document.getElementById("t1S").innerHTML=score1;
 		document.getElementById("team1").style.color="#00FF00";
 		document.getElementById("team1point").style.display="inline;"
+		document.getElementById("actualgame").style.display="none";
 	}
 	qnum++;
 	if (qnum===26){
@@ -65,6 +67,7 @@ function UpScore(){
 function goAwayPinata(){
 	document.getElementById("team1point").style.display="none";
 	document.getElementById("team2point").style.display="none";
+	document.getElementById("actualgame").style.display="inline";
 }
 
 function Reset(){
