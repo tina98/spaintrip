@@ -105,7 +105,7 @@ h1{
 	font-family: 'Lobster', cursive;
 	font-size: 100px;
 	display: none;
-	padding-top: 300px ;
+	padding-top: 300px;
 }
 #intro p {
 	font-size: 25px;
@@ -121,9 +121,11 @@ h1{
 	width:100%;
 	background-color:FFFFFF;
 	display: none;
+	padding-top: 400px;
 }
 #team2point{
 	width:100%;
 	background-color:FFFFFF;
 	display: none;
+	padding-top: 400px;
 }
