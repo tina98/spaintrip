@@ -4,6 +4,7 @@ var qnum=0;
 var teamnow=0;
 var t1=1;
 var t2=2;
+var flag=1;
 
 function myFunction() {
  // document.getElementById("demo").innerHTML = "Paragraph changed.";        
@@ -49,7 +50,7 @@ function UpScore(){
 		document.getElementById("team1").style.color="#00FF00";
 	}
 	qnum++;
-	if (qnum===2){
+	if (qnum===26){
 		winner();
 	} 
 	setTimeout(function(){Reset()},1450);
@@ -96,9 +97,10 @@ function ShowExample(){
 }
 
 function go(){
-	if (qnum===2){
+	if (qnum===26){
 		winner();
 	} 
+	// document.getElementById("intro").style.display="none";
     document.getElementById("question#").innerHTML=qnum;
     document.getElementById("team1").style.color="black";
     document.getElementById("team2").style.color="black";
@@ -119,13 +121,29 @@ function go(){
     	document.getElementById("mc4").innerHTML=currentq.a4;
     	}
     	
-    	if (qnum===1){
-    	  	alert("Un día, tu pasas tiempo con los amigos.  El teléfono suena.  La persona en el teléfono habla con tú acerca de un viaje de libre a España.  Tú vas a España con otros estudiantes.");
+    	if ((qnum===1)&& (flag===1)){
+    	  	theIntro();
   
     	}
 
 	
     	setTimeout(function(){document.getElementById("skipthis").style.display="inline";},5000);
+}
+
+function theIntro(){
+	document.getElementById("intro").style.display="inline";
+	document.getElementById("beginning").style.display="none";
+    //document.getElementById("firstanswer").focus();
+    document.getElementById("actualgame").style.display="none";
+    //qnum=1;
+    //go();
+}
+
+function goToQ1(){
+	document.getElementById("intro").style.display="none";
+	flag=2;
+	document.getElementById("actualgame").style.display="inline";
+	go();
 }
 
 function skip(){
@@ -209,7 +227,7 @@ function SwitchTeams(){
 	    document.getElementById("answer").value="";
 	    document.getElementById("answer").focus();
 	    	}
-	    check();
+	    
 }
 //typeq: questionFITB-true, questionMC-false;
 	function QuestionFITB (typeq, qnum, q, a){
@@ -242,7 +260,7 @@ var q07=new QuestionMC("mc", 7, "España es  _______.", "El destino", "El aeropu
 var q08=new QuestionFITB("bl", 8, "Tú / subir / al tren en España. (futuro tense)", "Tú subirás al tren en España.");
 var q09=new QuestionMC("mc", 9, "El tren-7:00 A.M. El tren sale a siete del la mañana. El tren sale______.", "A ocho del noche", "A tiempo", "Con retraso", "Con una demora", "a2");
 var q10=new QuestionFITB("bl", 10, "El tren / rápido / el aútobus. (compare)", "El tren es más rápido que el aútobus.");
-var q11=new QuestionFITB("bl", 11, "Yo / salir / la estación de ferrocarril.  (preterite tense)", "Yo salgo la estación de ferrocarril.");
+var q11=new QuestionFITB("bl", 11, "Yo / salir / la estación de ferrocarril.  (preterite tense)", "Yo salí la estación de ferrocarril.");
 var q12=new QuestionFITB("bl", 12, "Tranduce las palabras. Where do you go to watch a movie?", "¿Dónde vas a ver una película?");
 var q13=new QuestionMC("mc", 13, "¿Dónde vas a ver una película?", "El muchacho", "El restaurante", "El cine", "La casa americano", "a3");
 var q14=new QuestionFITB("bl", 14, "Tranduce las palabras. Later, I will go to the museum.", "Luego, yo iré al museo.");
