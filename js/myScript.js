@@ -50,7 +50,7 @@ function UpScore(){
 		score1++;
 		document.getElementById("t1S").innerHTML=score1;
 		document.getElementById("team1").style.color="#00FF00";
-		document.getElementById("team1point").style.display="inline;"
+		document.getElementById("team1point").style.display="inline";
 		document.getElementById("actualgame").style.display="none";
 	}
 	qnum++;
