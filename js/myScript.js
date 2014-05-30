@@ -54,7 +54,7 @@ function UpScore(){
 		document.getElementById("actualgame").style.display="none";
 	}
 	qnum++;
-	if (qnum===26){
+	if (qnum===2){
 		winner();
 	} 
 	setTimeout(function(){Reset()},1450);
@@ -108,7 +108,7 @@ function ShowExample(){
 }
 
 function go(){
-	if (qnum===26){
+	if (qnum===2){
 		winner();
 	} 
 	// document.getElementById("intro").style.display="none";
