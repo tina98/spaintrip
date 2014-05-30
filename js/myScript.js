@@ -54,7 +54,7 @@ function UpScore(){
 		document.getElementById("actualgame").style.display="none";
 	}
 	qnum++;
-	if (qnum===2){
+	if (qnum===3){
 		winner();
 	} 
 	setTimeout(function(){Reset()},1450);
@@ -108,7 +108,7 @@ function ShowExample(){
 }
 
 function go(){
-	if (qnum===2){
+	if (qnum===3){
 		winner();
 	} 
 	// document.getElementById("intro").style.display="none";
@@ -312,7 +312,10 @@ function shoutout(){
 
 function winner(){
 	document.getElementById("actualgame").style.display="none";
+	
 	document.getElementById("WINNING").style.display="inline";
+		document.getElementById("team1point").style.display="none";
+	document.getElementById("team2point").style.display="none";
 	if (score1>score2){
 		document.getElementById("actualwinner").innerHTML="Team 1 is the winner! ";
 	}
