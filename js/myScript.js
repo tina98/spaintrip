@@ -54,12 +54,14 @@ function UpScore(){
 		document.getElementById("actualgame").style.display="none";
 	}
 	qnum++;
-	if (qnum===3){
+	if (qnum===26){
 		winner();
 	} 
+	if (qnum<26){
 	setTimeout(function(){Reset()},1450);
 	setTimeout(function(){go()},1500);
 	setTimeout(function(){goAwayPinata()},1600);
+	}
 	
 	
 	
@@ -108,7 +110,7 @@ function ShowExample(){
 }
 
 function go(){
-	if (qnum===3){
+	if (qnum===26){
 		winner();
 	} 
 	// document.getElementById("intro").style.display="none";
